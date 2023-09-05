@@ -1,0 +1,169 @@
+:host {
+    overflow-x: hidden;
+    transform: 5s all;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    column-gap: 5px;
+  }
+  .saida {
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #C1EF60;
+    z-index: 2;
+    position: absolute;
+  top:130px;
+  mat-icon{
+    display: flex;
+    justify-content: center;
+  }
+}
+.title{
+    font-size: 25px;
+    font-weight: 500;
+}
+.body{
+    background-color: #fff;
+    width: 70%;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 20px;
+    padding:0px 20px;
+
+}
+img{
+    width: 150px;
+}
+.input-msm{
+    border: none;
+    background-color: #D9D9D9;
+    color: #A9A9A9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    padding-bottom: 35px;
+}
+.senha{
+    display: flex;
+    width: 100%;
+    column-gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.inputs{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    column-gap: 20px;
+    justify-content: center;
+}
+.input-senha{
+    border: none;
+    background-color: #D9D9D9;
+    color: #A9A9A9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.btn-entrar{
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #C1EF60;
+    z-index: 2;
+    position: absolute;
+    top:680px;
+
+    mat-icon{
+        display: flex;
+    justify-content: center;
+    }
+}
+.teste{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 534px) {
+    .body {
+        background-color: #fff;
+        width: 90%;
+        flex-direction: column;
+        row-gap: 10px;
+        border-radius: 20px;
+        padding-left: 20px;
+    }
+    .senha{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        column-gap: 20px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .input-senha{
+        width: 90%;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+.btn-entrar{
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #C1EF60;
+    z-index: 2;
+    position: absolute;
+    top:720px;
+
+    mat-icon{
+        display: flex;
+    justify-content: center;
+    }
+}
+.saida {
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #C1EF60;
+    z-index: 2;
+    position: absolute;
+  top:80px;
+  mat-icon{
+    display: flex;
+    justify-content: center;
+  }
+}
+}
