@@ -1,10 +1,11 @@
 <div class="login">
-  <div class="card-header">
-    <button type="button" class="saida" (click)="return()">
-      <mat-icon>logout</mat-icon>
-    </button>
-  </div>
   <div class="container">
+    <div class="btn1">
+      <button type="button" class="saida" (click)="return()">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+
     <img src="../../../assets/img/Logo-Verde.png" />
     <div class="title">LOGIN</div>
 
@@ -14,9 +15,10 @@
       <a (click)="return3()">CADASTRE-SE</a>
       <a (click)="return2()">forgot your password?</a>
     </div>
-
-    <button class="btn-entrar">
-      <mat-icon>login</mat-icon>
-    </button>
+    <div class="btn2">
+      <button class="btn-entrar" (click)="change()">
+        <mat-icon>login</mat-icon>
+      </button>
+    </div>
   </div>
 </div>

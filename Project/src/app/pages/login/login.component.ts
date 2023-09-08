@@ -18,4 +18,8 @@ export class LoginComponent implements OnInit {
   return3() {
     this.router.navigate(['cadastro']);
   }
+
+  change() {
+    this.router.navigate(['']);
+  }
 }

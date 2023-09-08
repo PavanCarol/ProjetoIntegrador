@@ -28,8 +28,8 @@
     padding: 20px;
     background-color: #C1EF60;
     z-index: 2;
-    position: absolute;
-  top:130px;
+    
+    margin-top: 10px;
   mat-icon{
     display: flex;
     justify-content: center;
@@ -45,7 +45,10 @@
     flex-direction: column;
     row-gap: 10px;
     border-radius: 20px;
-    padding:0px 20px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
 }
 img{
@@ -72,7 +75,6 @@ a{
     width: 100%;
     column-gap: 20px;
     justify-content: center;
-    margin-bottom: 20px;
 }
 .inputs{
     margin-top: 20px;
@@ -89,7 +91,6 @@ a{
     padding: 15px;
     border-radius: 10px;
     width: 30%;
-    margin-bottom: 30px;
 
     font-size: 20px;
     font-weight: 400;
@@ -102,8 +103,6 @@ a{
     padding: 20px;
     background-color: #C1EF60;
     z-index: 2;
-    position: absolute;
-    top:680px;
 
     mat-icon{
         display: flex;
@@ -111,8 +110,11 @@ a{
     }
 }
 .teste{
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 @media only screen and (max-width: 534px) {
     .body {

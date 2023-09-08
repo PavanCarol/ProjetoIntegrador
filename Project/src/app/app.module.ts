@@ -12,9 +12,18 @@ import { LoginComponent } from './pages/login/login.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ForgotComponent } from './pages/forgot/forgot.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { ConfigComponent } from './pages/config/config.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavbarComponent, LoginComponent, ForgotComponent, CadastroComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    NavbarComponent,
+    LoginComponent,
+    ForgotComponent,
+    CadastroComponent,
+    ConfigComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
