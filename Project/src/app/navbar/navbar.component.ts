@@ -12,4 +12,7 @@ export class NavbarComponent {
   return() {
     this.router.navigate(['config']);
   }
+  returHome() {
+    this.router.navigate(['']);
+  }
 }

@@ -14,6 +14,11 @@ import { ForgotComponent } from './pages/forgot/forgot.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ConfigComponent } from './pages/config/config.component';
 
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +36,10 @@ import { ConfigComponent } from './pages/config/config.component';
     MatButtonModule,
     MatMenuModule,
     BrowserAnimationsModule,
+    MatSelectModule,
+    MatInputModule,
+    MatFormFieldModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -13,7 +13,6 @@ const routes: Routes = [
     component: HomeComponent,
     // children: [{ path: 'login', component: LoginComponent }],
   },
-  { path: 'settings', component: ConfigComponent },
   { path: 'login', component: LoginComponent },
   { path: 'forgot', component: ForgotComponent },
   { path: 'cadastro', component: CadastroComponent },
