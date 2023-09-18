@@ -6,6 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { ForgotComponent } from './pages/forgot/forgot.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ConfigComponent } from './pages/config/config.component';
+import { VagasComponent } from './pages/vagas/vagas.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'forgot', component: ForgotComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'config', component: ConfigComponent },
+  { path: 'vagas', component: VagasComponent },
 ];
 
 @NgModule({

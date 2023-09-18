@@ -14,6 +14,12 @@
     justify-content: center;
     align-items: center;
 }
+.input{
+    width: 400px !important;
+}
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
 .btn1{
     display: flex;
     width: 100%;
@@ -47,20 +53,6 @@
 img{
     width: 270px;
 }
-.input-msm{
-    border: none;
-    background-color: #D9D9D9;
-    color: #A9A9A9;
-    padding: 15px;
-    border-radius: 10px;
-    width: 70%;
-    margin-bottom: 30px;
-
-    font-size: 20px;
-    font-weight: 400;
-    
-    font-family: 'Roboto', sans-serif;
-}
   .saida {
     z-index: 2;
     border: none;
@@ -83,7 +75,7 @@ img{
     background-color: #C1EF60;
     z-index: 2;
     mat-icon{
-        display: flex;
+    display: flex;
     justify-content: center;
     }
 }
@@ -92,7 +84,11 @@ img{
     img{
         width: 170px;
     }
-
+    .link{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
     .container{
         background-color: #fff;
         width: 90%;
@@ -104,5 +100,8 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .input{
+        width: 100% !important;
     }
 }

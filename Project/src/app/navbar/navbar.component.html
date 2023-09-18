@@ -15,18 +15,18 @@
             <button class="btn">REAL TIME</button>
           </button>
           <button mat-menu-item>
-            <button class="btn">STATISTICS</button>
+            <button class="btn" (click)="return2()">VAGAS</button>
           </button>
           <button mat-menu-item>
-            <button class="btn" (click)="return()">SETTINGS</button>
+            <button class="btn" (click)="return()">CONFIGURAÇÕES</button>
           </button>
         </mat-menu>
       </div>
       <div class="body">
-        <button>HOME</button>
-        <button>REAL TIME</button>
-        <button>STATISTICS</button>
-        <button>SETTINGS</button>
+        <button class="btn" (click)="returHome()">HOME</button>
+        <button class="btn">REAL TIME</button>
+        <button class="btn" (click)="return2()">VAGAS</button>
+        <button class="btn" (click)="return()">CONFIGURAÇÕES</button>
       </div>
     </div>
   </div>

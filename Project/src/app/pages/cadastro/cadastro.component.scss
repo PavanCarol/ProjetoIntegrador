@@ -6,154 +6,6 @@
     flex-direction: column;
     row-gap: 32px;
 }
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.card-header{
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    column-gap: 5px;
-  }
-  .saida {
-    z-index: 2;
-    border: none;
-    border-radius: 50%;
-    padding: 20px;
-    background-color: #C1EF60;
-    z-index: 2;
-    
-    margin-top: 10px;
-  mat-icon{
-    display: flex;
-    justify-content: center;
-  }
-}
-.title{
-    font-size: 25px;
-    font-weight: 500;
-}
-.body{
-    background-color: #fff;
-    width: 70%;
-    flex-direction: column;
-    row-gap: 10px;
-    border-radius: 20px;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-}
-img{
-    width: 150px;
-}
-.input-msm{
-    border: none;
-    background-color: #D9D9D9;
-    color: #A9A9A9;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-
-    font-size: 20px;
-    font-weight: 400;
-    
-    font-family: 'Roboto', sans-serif;
-}
-a{
-    padding-bottom: 35px;
-}
-.senha{
-    display: flex;
-    width: 100%;
-    column-gap: 20px;
-    justify-content: center;
-}
-.inputs{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    column-gap: 20px;
-    justify-content: center;
-}
-.input-senha{
-    border: none;
-    background-color: #D9D9D9;
-    color: #A9A9A9;
-    padding: 15px;
-    border-radius: 10px;
-    width: 30%;
-
-    font-size: 20px;
-    font-weight: 400;
-    
-    font-family: 'Roboto', sans-serif;
-}
-.btn-entrar{
-    border: none;
-    border-radius: 50%;
-    padding: 20px;
-    background-color: #C1EF60;
-    z-index: 2;
-
-    mat-icon{
-        display: flex;
-    justify-content: center;
-    }
-}
-.teste{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-@media only screen and (max-width: 534px) {
-    .body {
-        background-color: #fff;
-        width: 90%;
-        flex-direction: column;
-        row-gap: 10px;
-        border-radius: 20px;
-        padding-left: 20px;
-    }
-    .senha{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        column-gap: 20px;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    .input-senha{
-        width: 90%;
-    }
-    .title{
-        font-size: 18px;
-        font-weight: 500;
-    }
-.btn-entrar{
-    border: none;
-    border-radius: 50%;
-    padding: 20px;
-    background-color: #C1EF60;
-    z-index: 2;
-    position: absolute;
-    top:720px;
-
-    mat-icon{
-        display: flex;
-    justify-content: center;
-    }
-}
 .saida {
     z-index: 2;
     border: none;
@@ -161,11 +13,66 @@ a{
     padding: 20px;
     background-color: #C1EF60;
     z-index: 2;
-    position: absolute;
-  top:80px;
+    
+    margin-left: 5px;
   mat-icon{
     display: flex;
     justify-content: center;
   }
 }
+.logo{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+img{
+    width: 250px;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mat-stepper-horizontal {
+    margin-top: 8px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+
+    border-radius: 20px;
+  }
+
+.btn1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.fim{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.btn{
+    background-color: #C1EF60;
+    font-size: 18px;
+    padding: 10px 30px !important;
+    border-radius: 10px;
+    border: none;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 727px) {
+  
+    mat-stepper{
+        width: 100%;
+        border-radius: 0px !important;
+    }
+    
+   
 }

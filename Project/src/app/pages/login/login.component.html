@@ -9,11 +9,19 @@
     <img src="../../../assets/img/Logo-Verde.png" />
     <div class="title">LOGIN</div>
 
-    <input matInput class="input-msm" placeholder="E-mail" />
-    <input matInput class="input-msm" placeholder="Senha" />
+    <form [formGroup]="firstFormGroup">
+      <mat-form-field class="input">
+        <mat-label>E-mail</mat-label>
+        <input matInput formControlName="firstCtrl" required />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Senha</mat-label>
+        <input matInput formControlName="firstCtrl" required />
+      </mat-form-field>
+    </form>
     <div class="link">
       <a (click)="return3()">CADASTRE-SE</a>
-      <a (click)="return2()">forgot your password?</a>
+      <a (click)="return2()">ESQUECI MINHA SENHA</a>
     </div>
     <div class="btn2">
       <button class="btn-entrar" (click)="change()">

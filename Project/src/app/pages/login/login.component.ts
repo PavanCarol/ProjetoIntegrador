@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   ngOnInit(): void {}
-  constructor(private router: Router) {}
+  constructor(private router: Router, private _formBuilder: FormBuilder) {}
   return() {
     this.router.navigate(['']);
   }
@@ -20,6 +21,9 @@ export class LoginComponent implements OnInit {
   }
 
   change() {
-    this.router.navigate(['']);
+    this.router.navigate(['vagas']);
   }
+  firstFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required],
+  });
 }

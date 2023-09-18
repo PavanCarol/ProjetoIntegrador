@@ -1,23 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './pages/login/login.component';
-import { MatIconModule } from '@angular/material/icon';
 import { ForgotComponent } from './pages/forgot/forgot.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ConfigComponent } from './pages/config/config.component';
 
-import { MatSelectModule } from '@angular/material/select';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgChartsModule } from 'ng2-charts';
+import { VagasComponent } from './pages/vagas/vagas.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,7 @@ import { NgChartsModule } from 'ng2-charts';
     ForgotComponent,
     CadastroComponent,
     ConfigComponent,
+    VagasComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +44,9 @@ import { NgChartsModule } from 'ng2-charts';
     MatInputModule,
     MatFormFieldModule,
     NgChartsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatStepperModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

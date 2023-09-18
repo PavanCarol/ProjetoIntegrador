@@ -40,10 +40,14 @@ body {
 }
  
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif }
+body { margin: 0; }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*{
+  font-family: 'Roboto', sans-serif
+}
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
   cursor: pointer;
@@ -56,5 +60,53 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   box-sizing: border-box !important;
   width: 200px !important;
   height: 200px !important;
-  
+}
+mat-form-field{
+  display: block  !important;
+  font-size: 18px !important;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #FFF !important;
+  border: 2px solid #0000001f !important;
+  border-radius: 15px;
+}
+.mat-mdc-text-field-wrapper {
+  background-color: #ffF !important;
+  border-radius: 10px;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+  border-bottom-color: transparent !important;
+}
+.mdc-text-field--filled.mdc-text-field--invalid:not(.mdc-text-field--disabled),
+.mdc-floating-label--float-above {
+  color: #012030 !important;
+}
+.mdc-text-field {
+  margin-bottom: 20px !important;
+  border: 1px solid #eff1f469 !important;
+}
+.mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+.mat-step-icon-selected {
+  background-color: #C1EF60 !important;
+  color: var(--mat-stepper-header-selected-state-icon-foreground-color);
+}
+.mat-step-icon-state-edit {
+  background-color: #012030 !important;
+  color: var(--mat-stepper-header-edit-state-icon-foreground-color);
+}
+
+@media only screen and (max-width: 427px){
+  .mat-horizontal-stepper-header-container{
+    flex-wrap: wrap !important;
+    .mat-stepper-horizontal-line{
+      display: none !important;
+    }
+  }
+  .mat-horizontal-content-container {
+    overflow: auto !important;
+    max-height: 50vh !important;
+  }
 }

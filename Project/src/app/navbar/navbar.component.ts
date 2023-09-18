@@ -12,6 +12,9 @@ export class NavbarComponent {
   return() {
     this.router.navigate(['config']);
   }
+  return2() {
+    this.router.navigate(['vagas']);
+  }
   returHome() {
     this.router.navigate(['']);
   }
